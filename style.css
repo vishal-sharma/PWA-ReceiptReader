@@ -1,0 +1,68 @@
+html, body {
+	height: 100%; width: 100%;
+	padding: 0; margin: 0;
+	background: #FAFAFA; color: #444;
+	font-family: 'Helvetica Neue', arial, sans-serif; font-weight: 400; 
+	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+/* fallback */
+@font-face {
+	font-family: 'Material Icons'; font-style: normal; font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/materialicons/v29/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2');
+}
+.material-icons {
+	font-family: 'Material Icons'; font-weight: normal; font-style: normal; font-size: 24px;
+	line-height: 1; letter-spacing: normal;
+	text-transform: none; white-space: nowrap; word-wrap: normal; direction: ltr;
+	display: inline-block;
+	-webkit-font-feature-settings: 'liga'; -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+
+/* toolbar & drawer */
+.mdc-toolbar { background-color: #FD7507 !important; }
+.mdc-drawer__header { height: 295px !important; }
+.mdc-drawer__header-content {
+	background-image: url('/assets/ai.jpg');
+	background-origin: 0 0;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: #FD7507;
+	color: #fff;
+	font-size:  larger;
+}
+.mdc-list { color: #333;}
+.mdc-list .mdc-icon { margin-right: 12px; }
+
+/* home page */
+.home { margin: 16px; }
+.home h1 { font-size: 1.4em; }
+.home h2 { font-size: 1.1em; }
+
+/* camera page */
+html, body, .app, .camera-page { height: 100%;}
+.camera-page, .webcam { background-color: #111; }
+.webcam video { width: 100%; }
+.media-devices { position: absolute; z-index: 999; }
+.media-devices .mdc-chip { font-size: 0.6rem; }
+@media screen and (orientation:portrait) {
+	.footer { position:fixed; left:0px; bottom:0px; height:72px; width:100%; padding: 8px; }
+	.camera-buttons { margin: auto !important; width: 56px !important; }
+}
+@media screen and (orientation:landscape) {
+	.footer { position:fixed; right:0px; top: 48px; height:100%; width:72px; padding: 8px; }
+	.camera-buttons { position: absolute; top: 50%; height: 100px; margin-top: -56px; }
+}
+.mdc-fab { background-color: red !important; }
+
+/* results page */
+.results { margin: 16px; }
+.mdc-card {	flex-direction: row !important; margin-bottom: 8px; height: 152px; }
+
+.card-media { width: 300px }
+.card-media img { height: 100%; width: 100%; }
+.card-text { margin: 8px; display: flex; flex-direction: column; width: 100%; }
+.card-text h1 { font-size: 1em !important; margin-top: 0; }
+.card-text p { margin: 0; }
+.card-actions { margin-top: auto; }
+.card-action-button { color: #FD7507 !important;}

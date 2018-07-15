@@ -1,0 +1,16 @@
+{
+  "name": "smart-deductions",
+  "short_name": "smart-deductions",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff",
+  "theme_color": "#FD7507",
+  "icons": [
+    {
+      "src": "/assets/ai.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ]
+}
